@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7deb7dc5-94be-4cda-9943-f6985e9951b6" name="wx" url="http://wx.ks090.cn">
+        <fileTransfer host="wx.ks090.cn" port="21" rootFolder="/public_html" password="dfdddfd3dfd3dfccdfc3dfc4dfcbdfc6dfcf" username="wx_ftp">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
