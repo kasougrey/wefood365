@@ -49,6 +49,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+    .state('tab.menu', {
+      url: '/service/menu',
+      views: {
+        'tab-service': {
+          templateUrl: 'templates/service/menu.html',
+          controller: 'ServiceMenuCtrl'
+        }
+      }
+    })
 
   .state('tab.event', {
       url: '/event',
