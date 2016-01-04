@@ -1,1 +1,1 @@
-angular.module('starter.services', []);
+angular.module('wefood.services', []);

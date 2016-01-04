@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefood.directive'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -49,12 +49,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-    .state('tab.menu', {
-      url: '/service/menu',
+    .state('tab.dish', {
+      url: '/service/dish',
       views: {
         'tab-service': {
-          templateUrl: 'templates/service/menu.html',
-          controller: 'ServiceMenuCtrl'
+          templateUrl: 'templates/service/dish.html',
+          controller: 'ServiceDishCtrl'
+        }
+      }
+    })
+    .state('tab.dish-confirm', {
+      url: '/service/dish-confirm',
+      views: {
+        'tab-service': {
+          templateUrl: 'templates/service/dish-confirm.html',
+          controller: 'ServiceDishConfirmCtrl'
         }
       }
     })
