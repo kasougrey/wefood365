@@ -14,10 +14,26 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-$balanced:                        #060 !default;
+$balanced:                        #0288D1 !default;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "../www/lib/ionic/scss/ionic";
 
+
+.app-menu{
+  background: #FFF;
+}
+
+.app-menu-category{
+  width: 30%;
+  background: #F5F5F5;
+  float: left;
+}
+
+.app-menu-content{
+  width: 70%;
+  background: #FFF;
+  float: right;
+}
