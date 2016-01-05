@@ -4,8 +4,7 @@ angular.module('wefood.controllers', [])
 
 })
 .controller('ServiceDishCtrl', function($scope,$ionicHistory) {
-console.log($ionicHistory.backView());
-console.log($ionicHistory.forwardView());
+
 
 })
 .controller('ServiceDishConfirmCtrl', function($scope) {

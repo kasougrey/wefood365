@@ -37,3 +37,54 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   background: #FFF;
   float: right;
 }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1444670926_4162803.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1444670926_4162803.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1444670926_4162803.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1444670926_4162803.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1444670926_4162803.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont";
+  font-size: 16px;
+  font-style: normal;
+}
+
+
+/* dish-confirm */
+
+.order-confirm .address{
+  @include clearfix;
+  background: #607D8B;
+  padding: 12px;
+  .address-info{
+    float: left;
+    span{
+      line-height: 24px;
+      color: #FFF;
+      display: block;
+      font-weight: 500;
+      i{
+        font-style: normal;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.order-confirm .item{
+  font-size: 14px;
+  padding: 12px;
+  &.item-icon-left{
+    padding-left: 40px;
+  }
+  .iconfont{
+    font-size: 16px;
+  }
+  .badge{
+    top:12px;
+  }
+}
