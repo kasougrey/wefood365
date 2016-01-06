@@ -7,7 +7,22 @@ angular.module('wefood.controllers', [])
 
 
 })
-.controller('ServiceDishConfirmCtrl', function($scope) {
+.controller('ServiceDishConfirmCtrl', function($scope,$ionicLoading) {
+  $scope.firstNum = 0;
+  $scope.test = function(a) {
+    $scope.firstNum ++;
+    console.log($scope.firstNum);
+  }
+
+  $scope.showLoading = function() {
+    $ionicLoading.show({
+      template: 'Loading...'
+    });
+  };
+
+  $scope.hideLoading = function(){
+    $ionicLoading.hide();
+  };
 
 })
 .controller('EventCtrl', function($scope) {

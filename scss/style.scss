@@ -55,7 +55,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 /* dish-confirm */
+.order-confirm{
+  background: #e1e2e3;
 
+}
 .order-confirm .address{
   @include clearfix;
   background: #607D8B;
@@ -74,6 +77,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     }
   }
 }
+
+.order-confirm .list{
+  margin-top: 15px;
+}
+
+.order-confirm .checkbox-icon{
+  float: right;
+}
+
 
 .order-confirm .item{
   font-size: 14px;
