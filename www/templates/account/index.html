@@ -1,5 +1,57 @@
 <ion-view view-title="Account">
-  <ion-content class="padding">
-account
+  <ion-content class="account">
+    <div class="account-header">
+      <div class="avatar"><img src="/img/default-avatar.jpg" alt=""></div>
+      <div class="username">乌鸦0508<i class="vip1">VIP1</i></div>
+    </div>
+    <div class="account-status">
+      <div class="status-info" ng-click="test()">
+        <div class="status-content">
+          <span class="info-title">余额</span>
+          <span class="info-value">10.00</span>
+        </div>
+      </div>
+      <div class="status-info" ng-click="test()">
+        <div class="status-content">
+          <span class="info-title">优惠券</span>
+          <span class="info-value">5</span>
+        </div>
+      </div>
+      <div class="status-info" ng-click="test()">
+        <div class="status-content">
+          <span class="info-title">积分</span>
+          <span class="info-value">1000</span>
+        </div>
+      </div>
+    </div>
+
+    <ion-list>
+      <!--      <ion-item class="item-divider">
+              会员功能
+            </ion-item>-->
+      <ion-item ng-click="test()">
+        我的订单
+        <span ng-if="firstNum > 0" class="badge badge-assertive">{{firstNum}}</span>
+      </ion-item>
+      <ion-item>
+        我的交易
+      </ion-item>
+      <ion-item class="item-icon-left">
+        <i class="icon iconfont assertive">&#xe633;</i>
+        我的收藏
+
+      </ion-item>
+      <ion-item class="item-icon-left">
+        <i class="icon iconfont calm">&#xe618;</i>
+        我的会员卡
+      </ion-item>
+      <ion-item class="item-icon-left">
+        <i class="icon iconfont balanced">&#xe635;</i>
+        我的优惠券
+        <span class="badge badge-assertive">10</span>
+      </ion-item>
+    </ion-list>
+
+
   </ion-content>
 </ion-view>

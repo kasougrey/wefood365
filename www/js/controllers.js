@@ -14,15 +14,7 @@ angular.module('wefood.controllers', [])
     console.log($scope.firstNum);
   }
 
-  $scope.showLoading = function() {
-    $ionicLoading.show({
-      template: 'Loading...'
-    });
-  };
 
-  $scope.hideLoading = function(){
-    $ionicLoading.hide();
-  };
 
 })
 .controller('EventCtrl', function($scope) {

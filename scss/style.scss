@@ -3,6 +3,7 @@ To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
 
 For example, you might change some of the default colors:
+*/
 
 $light:                           #fff !default;
 $stable:                          #f8f8f8 !default;
@@ -13,8 +14,7 @@ $energized:                       #ffc900 !default;
 $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
-*/
-$balanced:                        #0288D1 !default;
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
@@ -22,22 +22,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "../www/lib/ionic/scss/ionic";
 
 
-.app-menu{
-  background: #FFF;
-}
-
-.app-menu-category{
-  width: 30%;
-  background: #F5F5F5;
-  float: left;
-}
-
-.app-menu-content{
-  width: 70%;
-  background: #FFF;
-  float: right;
-}
-
+/* reset */
 @font-face {
   font-family: 'iconfont';
   src: url('//at.alicdn.com/t/font_1444670926_4162803.eot'); /* IE9*/
@@ -53,6 +38,119 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   font-style: normal;
 }
 
+.list{
+  margin-top: 15px;
+}
+
+.checkbox-icon{
+  float: right;
+}
+
+.item{
+  font-size: 14px;
+  padding: 12px;
+  &.item-icon-left{
+    padding-left: 40px;
+  }
+  .iconfont{
+    font-size: 16px;
+  }
+  .badge{
+    top:12px;
+  }
+}
+
+/* dish */
+.dish{
+  background: #FFF;
+}
+
+.dish-category{
+  width: 30%;
+  background: #F5F5F5;
+  float: left;
+}
+
+.dish-content{
+  width: 70%;
+  background: #FFF;
+  float: right;
+}
+
+
+/* account */
+
+.account{
+  background: #f4f4f4;
+}
+
+.account-header{
+  @include clearfix;
+  background: $calm;
+  height: 120px;
+  padding: 20px;
+  padding-top: 30px;
+  .avatar{
+    float: left;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    img{
+      width: 80px;
+      height: 80px;
+      @include border-radius(40px);
+      border: 4px solid $dark;
+    }
+  }
+  .username{
+    float: left;
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    height: 60px;
+    padding-top: 15px;
+    .vip1{
+      display: block;
+      font-weight: normal;
+      font-size: 8px;
+      height: 18px;
+      line-height: 18px;
+      padding: 0 2px;
+      @include border-radius(2px);
+      background: $assertive;
+      margin-left: 10px;
+    }
+  }
+}
+
+.account-status{
+  @include clearfix;
+  background: #FFF;
+  border-bottom: 1px solid #e1e2e3;
+  .status-info{
+    float: left;
+    width: 33.33%;
+    padding: 5px 0;
+    .status-content{
+      @include clearfix;
+      border-left: 1px solid #e1e2e3;
+    }
+
+    .info-title{
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+    .info-value{
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      color: #9e9e9e;
+    }
+  }
+}
 
 /* dish-confirm */
 .order-confirm{
@@ -78,25 +176,3 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   }
 }
 
-.order-confirm .list{
-  margin-top: 15px;
-}
-
-.order-confirm .checkbox-icon{
-  float: right;
-}
-
-
-.order-confirm .item{
-  font-size: 14px;
-  padding: 12px;
-  &.item-icon-left{
-    padding-left: 40px;
-  }
-  .iconfont{
-    font-size: 16px;
-  }
-  .badge{
-    top:12px;
-  }
-}
