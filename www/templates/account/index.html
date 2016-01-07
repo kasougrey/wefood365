@@ -1,8 +1,10 @@
-<ion-view view-title="Account">
+<ion-view view-title="会员中心">
   <ion-content class="account">
     <div class="account-header">
       <div class="avatar"><img src="/img/default-avatar.jpg" alt=""></div>
-      <div class="username">乌鸦0508<i class="vip1">VIP1</i></div>
+      <div class="username">乌鸦0508
+        <!--<i class="vip1">VIP1</i>-->
+      </div>
     </div>
     <div class="account-status">
       <div class="status-info" ng-click="test()">
@@ -26,28 +28,25 @@
     </div>
 
     <ion-list>
-      <!--      <ion-item class="item-divider">
-              会员功能
-            </ion-item>-->
-      <ion-item ng-click="test()">
+      <ion-item class="item-icon-left" ng-click="goUrl('tab.order-list')">
+        <i class="icon iconfont positive">&#xe629;</i>
         我的订单
-        <span ng-if="firstNum > 0" class="badge badge-assertive">{{firstNum}}</span>
       </ion-item>
-      <ion-item>
-        我的交易
+      <ion-item class="item-icon-left" ng-click="goUrl('tab.trade-list')">
+        <i class="icon iconfont energized">&#xe62c;</i>
+        交易记录
       </ion-item>
-      <ion-item class="item-icon-left">
+      <ion-item class="item-icon-left" ng-click="goUrl('tab.collection-list')">
         <i class="icon iconfont assertive">&#xe633;</i>
         我的收藏
-
       </ion-item>
-      <ion-item class="item-icon-left">
+      <ion-item class="item-icon-left" ng-click="goUrl('test2')">
         <i class="icon iconfont calm">&#xe618;</i>
-        我的会员卡
+        会员卡
       </ion-item>
-      <ion-item class="item-icon-left">
+      <ion-item class="item-icon-left" ng-click="goUrl('dish.test')">
         <i class="icon iconfont balanced">&#xe635;</i>
-        我的优惠券
+        优惠券
         <span class="badge badge-assertive">10</span>
       </ion-item>
     </ion-list>
