@@ -1,5 +1,24 @@
 <ion-view hide-tabs view-title="order-list">
-  <ion-content class="account">
-    order-list
+  <ion-content class="order-list">
+    <div class="tabs">
+      <a class="tab-item">Home</a>
+      <a class="tab-item">Favorites</a>
+      <a class="tab-item">Settings</a>
+    </div>
+    <div class="list-body">
+      <ul>
+        <li ng-click="orderDetail()">
+          <div class="item-info"><span>订单编号：17003628</span><span>下单时间：2016-01-07 12:35</span></div>
+          <div class="item-body">
+            <h3>辛香汇（金鹰店）</h3>
+            <span>堂吃：座号A004</span>
+          </div>
+          <div class="item-summary">
+            <span>总额：<i class="money">$258.00</i></span>
+            <span><i class="order-status">已结账</i></span>
+          </div>
+        </li>
+      </ul>
+    </div>
   </ion-content>
 </ion-view>

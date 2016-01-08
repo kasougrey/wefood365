@@ -3,9 +3,9 @@
 }
 
 .product-desc {
-  color: #666;
-  font-size: 1.2rem;
-  padding: 1rem;
+  color: #000;
+  font-size: 1.6rem;
+  padding: 1.5rem 1rem;
 }
 
 .product-col {
@@ -15,11 +15,12 @@
 .product-title {
   color: #cd2c30;
   font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .product-content {
   color: #333;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
 }
 
@@ -38,7 +39,7 @@
 }
 
 .product-image img {
-  width: 90%;
+  width: 100%;
 }
 
 .table-divider {
@@ -78,7 +79,9 @@
   background: #cd2c30;
   color: #FFF;
 }
-
+.am-figure-default {
+  margin:0;
+}
 body {
   padding-bottom: 5rem;
 }
