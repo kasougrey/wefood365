@@ -13,6 +13,4 @@ directiveMod.directive('hideTabs',function($rootScope){
                 $rootScope.hideTabs = '';
             })
         }
-  } })
-
-
+  } });

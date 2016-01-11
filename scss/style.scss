@@ -5,11 +5,11 @@ in ionic's _variables.scss file.
 For example, you might change some of the default colors:
 */
 
-$primary-color-dark:   #FFA000;
-$primary-color:        #FFC107;
-$primary-color-light:  #FFECB3;
-$primary-color-text:   #212121;
-$accent-color:         #4CAF50;
+$primary-color-dark:   #0288D1;
+$primary-color:        #03A9F4;
+$primary-color-light:  #B3E5FC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FF5252;
 $primary-text-color:   #212121;
 $secondary-text-color: #727272;
 $divider-color:        #B6B6B6;
@@ -99,9 +99,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 /* account */
-
 .account{
-  background: #f4f4f4;
+  background: #e1e2e3;
+
 }
 
 .account-header{
@@ -202,5 +202,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 .list-body{
+  @include clearfix;
   color: $primary-text-color;
+  padding: 10px;
+}
+
+.list-body .card {
+  margin:0;
+  margin: 10px 0;
 }

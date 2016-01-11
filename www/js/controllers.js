@@ -27,4 +27,16 @@ angular.module('wefood.controllers', [])
 })
 .controller('AccountOrderListCtrl',function($scope) {
   //我的订单
+})
+.controller('AccountOrderDetailCtrl',function($scope) {
+  //我的订单
+})
+.controller('AccountTradeListCtrl',function($scope) {
+  //我的交易记录
+})
+.controller('AccountCollectionListCtrl',function($scope) {
+  //我的交易记录
+})
+.controller('AccountAppointmentListCtrl',function($scope) {
+  //我的预约定位
 });
