@@ -1,10 +1,10 @@
 // Ionic Starter App
-
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
+
 angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefood.directive'])
 
 .run(function($ionicPlatform) {
@@ -22,7 +22,6 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
     }
   });
 })
-
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
@@ -32,11 +31,7 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
-    url: '/tab',
-    abstract: true,
-    templateUrl: 'templates/tabs.html'
-  })
+    .state('tab', {url: '/tab',abstract: true,templateUrl: 'templates/tabs.html'})
 
   // Each tab has its own nav history stack:
 
@@ -97,7 +92,6 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
       }
     }
   })
-
   .state('tab.order-list',{
     url:'/account/order-list',
     views:{
@@ -107,24 +101,43 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
       }
     }
   })
-  .state('dish', {
-    url: '/dish',
-    abstract: true,
-    templateUrl: 'templates/dish.html'
-  })
-  .state('dish.test',{
-    url:'/test',
+  .state('order-detail',{
+    url:'/account/order-detail',
     views:{
-      'dish-content':{
-        templateUrl: 'templates/test.html',
-        controller: 'TestCtrl'
+      'tab-account':{
+        templateUrl: 'templates/account/order-detail.html',
+        controller: 'AccountOrderDetailCtrl'
       }
     }
   })
-    .state('test2',{
-      url:'/test2',
-      templateUrl: 'templates/test.html'
-  });
+    .state('tab.trade-list',{
+    url:'/account/trade-list',
+    views:{
+      'tab-account':{
+        templateUrl: 'templates/account/trade-list.html',
+        controller: 'AccountTradeListCtrl'
+      }
+    }
+  })
+  .state('tab.appointment-list',{
+    url:'/account/appointment-list',
+    views:{
+      'tab-account':{
+        templateUrl: 'templates/account/appointment-list.html',
+        controller: 'AccountAppointmentListCtrl'
+      }
+    }
+  })
+  .state('tab.collection-list',{
+    url:'/account/collection-list',
+    views:{
+      'tab-account':{
+        templateUrl: 'templates/account/collection-list.html',
+        controller: 'AccountCollectionListCtrl'
+      }
+    }
+  })
+
 
 
   // if none of the above states are matched, use this as the fallback

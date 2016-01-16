@@ -1,24 +1,45 @@
 <ion-view hide-tabs view-title="order-list">
   <ion-content class="order-list">
-    <div class="tabs">
-      <a class="tab-item">Home</a>
-      <a class="tab-item">Favorites</a>
-      <a class="tab-item">Settings</a>
-    </div>
-    <div class="list-body">
-      <ul>
-        <li ng-click="orderDetail()">
-          <div class="item-info"><span>订单编号：17003628</span><span>下单时间：2016-01-07 12:35</span></div>
-          <div class="item-body">
-            <h3>辛香汇（金鹰店）</h3>
-            <span>堂吃：座号A004</span>
-          </div>
-          <div class="item-summary">
-            <span>总额：<i class="money">$258.00</i></span>
-            <span><i class="order-status">已结账</i></span>
-          </div>
-        </li>
-      </ul>
+    <div class="list list-inset">
+      <div class="card" ng-click="showDetail()">
+        <div class="item item-divider">
+          <h4>订单编号：17003628<span class="order-time">2016-01-07 12:35</span></h4>
+        </div>
+        <div class="item item-text-wrap">
+          <h2 class="order-title">辛香汇（金鹰店）</h2>
+          <span class="order-cate">堂吃：座号A004</span>
+        </div>
+        <div class="item item-divider">
+          <span class="order-bill">总额：<i>$258.00</i></span>
+          <span class="order-status">已完成</span>
+        </div>
+      </div>
+      <div class="card" ng-click="showDetail()">
+        <div class="item item-divider">
+          <h4>订单编号：17003628<span class="order-time">2016-01-07 12:35</span></h4>
+        </div>
+        <div class="item item-text-wrap">
+          <h2 class="order-title">辛香汇（金鹰店）</h2>
+          <span class="order-cate">堂吃：座号A004</span>
+        </div>
+        <div class="item item-divider">
+          <span class="order-bill">总额：<i>$258.00</i></span>
+          <span class="order-status assertive">待支付</span>
+        </div>
+      </div>
+      <div class="card" ng-click="showDetail()">
+        <div class="item item-divider">
+          <h4>订单编号：17003628<span class="order-time">2016-01-07 12:35</span></h4>
+        </div>
+        <div class="item item-text-wrap">
+          <h2 class="order-title">辛香汇（金鹰店）</h2>
+          <span class="order-cate">堂吃：座号A004</span>
+        </div>
+        <div class="item item-divider">
+          <span class="order-bill">总额：<i>$258.00</i></span>
+          <span class="order-status">已取消</span>
+        </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>

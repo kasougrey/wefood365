@@ -1,27 +1,44 @@
 <ion-view hide-tabs view-title="order-detail">
-  <ion-content>
-    店名
-    地址+电话
+  <ion-content class="stable-bg">
+    <ion-list>
+      <ion-item class="item-divider">
+        订单信息
+      </ion-item>
+      <ion-item><span class="item-left-label">订单编号:</span>168264</ion-item>
+      <ion-item><span class="item-left-label">下单时间:</span>2015-12-12</ion-item>
+<!--      <ion-item><span class="item-left-label">订单方式:</span>堂吃</ion-item>
+      <ion-item><span class="item-left-label">订单桌号:</span>B22</ion-item>-->
+      <ion-item><span class="item-left-label">订单方式:</span>外卖</ion-item>
+      <ion-item><span class="item-left-label">外送地址:</span>昆山前进东路1008号</ion-item>
+      <ion-item><span class="item-left-label">联系方式:</span>18914999600(吴先生)</ion-item>
+      <ion-item><span class="item-left-label">订单金额:</span><i class="bill">$288.00</i></ion-item>
+    </ion-list>
 
-    订单信息
-    订单编号：168264
-    订单方式：堂食
-    订单桌号：B22
-    //外送
-    //外送地址：啊手动阀手动阀
-    //联系方式：192838747（第三代）
-    下单时间：2016-01-05 12:34
-    订单金额：
+    <ion-list>
+      <ion-item class="item-divider">
+        订单内容
+      </ion-item>
+      <ion-item>
+        <h2>鱼香肉丝</h2>
+        <p>$18.00</p>
+        <span class="item-note">X1</span>
+      </ion-item>
+      <ion-item>
+        <h2>麻辣烫</h2>
+        <p>$21.00</p>
+        <span class="item-note">X1</span>
+      </ion-item>
+      <ion-item class="item-thumbnail-left">
+        <img src="cover.jpg">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </ion-item>
+    </ion-list>
 
-    所点餐饮
-    鱼香肉丝 ￥18:00  X1
-    鱼香肉丝 ￥18:00  X1
-    鱼香肉丝 ￥18:00  X1
-    鱼香肉丝 ￥18:00  X1
+    <button class="button button-full button-balanced">
+    Full Width Block Button
+    </button>
 
-    已结账显示：已结单
-    未结账显示：我要支付
-    呼叫服务
 
   </ion-content>
 </ion-view>
