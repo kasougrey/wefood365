@@ -101,11 +101,7 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
       }
     }
   })
-<<<<<<< HEAD
   .state('tab.order-detail',{
-=======
-  .state('order-detail',{
->>>>>>> origin/master
     url:'/account/order-detail',
     views:{
       'tab-account':{
@@ -132,7 +128,6 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
       }
     }
   })
-<<<<<<< HEAD
     .state('tab.appointment-detail',{
     url:'/account/appointment-detail',
     views:{
@@ -142,8 +137,7 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
       }
     }
   })
-=======
->>>>>>> origin/master
+
   .state('tab.collection-list',{
     url:'/account/collection-list',
     views:{
@@ -152,12 +146,8 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
         controller: 'AccountCollectionListCtrl'
       }
     }
-<<<<<<< HEAD
   });
-=======
-  })
 
->>>>>>> origin/master
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/service');

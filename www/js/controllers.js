@@ -33,12 +33,6 @@ angular.module('wefood.controllers', [])
 .controller('AccountOrderDetailCtrl',function($scope) {
   //我的订单
 })
-<<<<<<< HEAD
-.controller('AccountOrderDetailCtrl',function($scope) {
-  //我的订单
-})
-=======
->>>>>>> origin/master
 .controller('AccountTradeListCtrl',function($scope) {
   //我的交易记录
 })
