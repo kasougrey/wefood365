@@ -25,12 +25,20 @@ angular.module('wefood.controllers', [])
     $state.go(url);
   }
 })
-.controller('AccountOrderListCtrl',function($scope) {
-  //我的订单
+.controller('AccountOrderListCtrl',function($scope,$state) {
+  $scope.showDetail = function(){
+    $state.go('tab.order-detail');
+  }
 })
 .controller('AccountOrderDetailCtrl',function($scope) {
   //我的订单
 })
+<<<<<<< HEAD
+.controller('AccountOrderDetailCtrl',function($scope) {
+  //我的订单
+})
+=======
+>>>>>>> origin/master
 .controller('AccountTradeListCtrl',function($scope) {
   //我的交易记录
 })
