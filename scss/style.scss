@@ -5,21 +5,12 @@ in ionic's _variables.scss file.
 For example, you might change some of the default colors:
 */
 
-<<<<<<< HEAD
-$primary-color-dark:   #0288D1;
-$primary-color:        #03A9F4;
-$primary-color-light:  #B3E5FC;
-$primary-color-text:   #FFFFFF;
-$accent-color:         #FF5252;
-$primary-text-color:   #212121;
-=======
-$primary-color-dark: #D32F2F;
-$primary-color: #F44336;
-$primary-color-light: #FFCDD2;
+$primary-color-dark: #0288D1;
+$primary-color: #03A9F4;
+$primary-color-light: #B3E5FC;
 $primary-color-text: #FFFFFF;
-$accent-color: #607D8B;
+$accent-color: #FF5252;
 $primary-text-color: #212121;
->>>>>>> origin/master
 $secondary-text-color: #727272;
 $divider-color: #B6B6B6;
 
@@ -61,10 +52,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   font-style: normal;
 }
 
-.list {
-  margin-top: 15px;
-}
-
 .checkbox-icon {
   float: right;
 }
@@ -81,39 +68,44 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   .badge {
     top: 12px;
   }
-  .item-left-label{
+  .item-left-label {
     color: #666666;
     margin-right: 10px;
+  }
+  .item-right-label {
+    float: right;
+  }
+  .input-label {
+    padding: 0;
+    padding-right: 10px;
+    font-size: 14px;
   }
 }
 
 /* dish */
 .dish {
-  background: #FFF;
 }
 
 .dish-category {
+  @include clearfix;
   width: 30%;
   background: #F5F5F5;
-  float: left;
+  li{
+    line-height: 50px;
+  }
 }
 
 .dish-content {
   width: 70%;
   background: #FFF;
-  float: right;
+  &.overflow-scroll{
+    left:30%
+  }
 }
 
 /* account */
-<<<<<<< HEAD
-.account{
-  background: #e1e2e3;
-
-=======
-
 .account {
-  background: #f4f4f4;
->>>>>>> origin/master
+  background: #e1e2e3;
 }
 
 .account-header {
@@ -234,17 +226,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   .order-status {
     float: right;
   }
+}
 
-<<<<<<< HEAD
-.list-body{
+.list-body {
   @include clearfix;
   color: $primary-text-color;
   padding: 10px;
 }
 
 .list-body .card {
-  margin:0;
+  margin: 0;
   margin: 10px 0;
-=======
->>>>>>> origin/master
 }

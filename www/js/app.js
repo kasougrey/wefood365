@@ -20,6 +20,7 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
   });
 })
 .config(function($stateProvider, $urlRouterProvider) {
@@ -35,6 +36,8 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
 
   // Each tab has its own nav history stack:
 
+
+// service
   .state('tab.service', {
     url: '/service',
     views: {
@@ -62,7 +65,19 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
         }
       }
     })
+    .state('tab.appointment', {
+      url: '/service/appointment',
+      views: {
+        'tab-service': {
+          templateUrl: 'templates/service/appointment.html',
+          controller: 'ServiceAppointmentCtrl'
+        }
+      }
+    })
 
+
+
+//event
   .state('tab.event', {
       url: '/event',
       views: {
@@ -73,6 +88,7 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
       }
     })
 
+// cart
   .state('tab.cart', {
     url: '/cart',
     views: {
@@ -83,6 +99,8 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
     }
   })
 
+
+//account
   .state('tab.account', {
     url: '/account',
     views: {
@@ -128,14 +146,10 @@ angular.module('wefood', ['ionic', 'wefood.controllers', 'wefood.services','wefo
       }
     }
   })
-    .state('tab.appointment-detail',{
+    .state('appointment-detail',{
     url:'/account/appointment-detail',
-    views:{
-      'tab-account':{
-        templateUrl: 'templates/account/appointment-detail.html',
-        controller: 'AccountAppointmentDetailCtrl'
-      }
-    }
+    templateUrl: 'templates/account/appointment-detail.html',
+    controller: 'AccountAppointmentDetailCtrl'
   })
 
   .state('tab.collection-list',{

@@ -6,20 +6,26 @@ angular.module('wefood.controllers', [])
 .controller('TestCtrl', function($scope) {
   console.log($scope);
 })
+
+//service
 .controller('ServiceDishCtrl', function($scope,$ionicHistory) {
-
-
 })
 .controller('ServiceDishConfirmCtrl', function($scope) {
+})
+.controller('ServiceAppointmentCtrl', function($scope) {
 
 })
+
+
+//event
 .controller('EventCtrl', function($scope) {
-
 })
 
+//cart
 .controller('CartCtrl', function($scope) {
-
 })
+
+//account
 .controller('AccountCtrl', function($scope,$state) {
   $scope.goUrl = function(url) {
     $state.go(url);
@@ -39,6 +45,11 @@ angular.module('wefood.controllers', [])
 .controller('AccountCollectionListCtrl',function($scope) {
   //我的交易记录
 })
-.controller('AccountAppointmentListCtrl',function($scope) {
-  //我的预约定位
+.controller('AccountAppointmentListCtrl',function($scope,$state) {
+  $scope.showDetail = function(){
+    $state.go('appointment-detail');
+  }
+})
+.controller('AccountAppointmentDetailCtrl',function($scope){
+
 });

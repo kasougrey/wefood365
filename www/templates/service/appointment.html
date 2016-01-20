@@ -1,16 +1,55 @@
 <ion-view view-title="预定">
   <ion-content class="padding">
-    订单信息
-    日期：date
-    选桌：table
-    预定金额：
 
-    支付方式：
-    微信支付/咱不支付
 
-    联系人：
-    手机：自动获取
-    称呼：
-
+    <ion-list>
+      <ion-item class="item-divider">
+      订单信息
+      </ion-item>
+      <ion-item class="item-input item-select">
+        <div class="input-label">
+          就餐日期
+        </div>
+        <select>
+          <option>Blue</option>
+          <option selected>Green</option>
+          <option>Red</option>
+        </select>
+      </ion-item>
+      <ion-item class="item-input item-select">
+        <div class="input-label">
+          就餐人数
+        </div>
+        <select>
+          <option>1-2人</option>
+          <option>3-4人</option>
+          <option>6-10人</option>
+          <option>10人以上</option>
+        </select>
+      </ion-item>
+      <ion-item>
+      预定金额
+      <span class="item-right-label">250.00</span>
+    </ion-item>
+      <ion-item>
+        支付方式
+        <span class="item-right-label">暂不支付</span>
+      </ion-item>
+      <ion-item class="item-divider">
+        联系方式
+      </ion-item>
+      <ion-item>
+        手机号码<span class="item-right-label">18914999600</span>
+      </ion-item>
+      <ion-item class="item-input">
+        <div class="input-label">
+          称呼
+        </div>
+        <input type="text" placeholder="输入称呼">
+      </ion-item>
+    </ion-list>
+    <button class="button button-block button-positive">
+      提交
+    </button>
   </ion-content>
 </ion-view>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <script src="//cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
 </head>
 <body>
 <table border="1">
@@ -607,5 +608,10 @@
     <td>在水一方</td>
   </tr>
 </table>
+  <script>
+document.querySelector('body').addEventListener('touchstart', function (ev) {
+	ev.preventDefault();
+});
+  </script>
 </body>
 </html>
