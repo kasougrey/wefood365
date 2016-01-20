@@ -90,6 +90,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   @include clearfix;
   width: 30%;
   background: #F5F5F5;
+  bottom: 44px;
   li{
     line-height: 50px;
   }
@@ -98,6 +99,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .dish-content {
   width: 70%;
   background: #FFF;
+  bottom: 44px;
   &.overflow-scroll{
     left:30%
   }

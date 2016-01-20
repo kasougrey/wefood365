@@ -3,6 +3,7 @@
  */
 
 var directiveMod=angular.module("wefood.directive", []);
+/*
 
 directiveMod.directive('hideTabs',function($rootScope){
     return {
@@ -14,3 +15,4 @@ directiveMod.directive('hideTabs',function($rootScope){
             })
         }
   } });
+*/
