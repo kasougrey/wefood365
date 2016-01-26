@@ -1,91 +1,57 @@
 <ion-view  view-title="点菜服务">
   <ion-content class="dish-category">
       <ul>
-        <li>
+        <li class="dish-category-item">
           <span class="icon"><i class="iconfont">&#xe610;</i></span>
           <span class="title">冷饮</span>
-          <span class="sub-title">Espresso</span>
-          <i class="flag">1</i>
+          <i class="flag">9</i>
         </li>
-        <li class="active">
-          <span class="icon"><i class="iconfont">&#xe606;</i></span>
-          <span class="title">咖啡/茶饮</span>
-          <span class="sub-title">Coffee/Tea</span>
-          <i class="flag">2</i>
+        <li class="dish-category-item active">
+          <span class="icon"><i class="iconfont">&#xe610;</i></span>
+          <span class="title">很好吃的冷饮</span>
+          <i class="flag">9</i>
         </li>
-        <li>
-          <span class="icon"><i class="iconfont">&#xe607;</i></span>
-          <span class="title">美食</span>
-          <span class="sub-title">Food</span>
-        </li>
-        <li>
+        <li class="dish-category-item">
           <span class="icon"><i class="iconfont">&#xe610;</i></span>
           <span class="title">冷饮</span>
-          <span class="sub-title">Espresso</span>
-          <i class="flag">1</i>
         </li>
-        <li class="active">
-          <span class="icon"><i class="iconfont">&#xe606;</i></span>
-          <span class="title">咖啡/茶饮</span>
-          <span class="sub-title">Coffee/Tea</span>
-          <i class="flag">2</i>
-        </li>
-        <li>
-          <span class="icon"><i class="iconfont">&#xe607;</i></span>
-          <span class="title">美食</span>
-          <span class="sub-title">Food</span>
-        </li>
-        <li>
+        <li class="dish-category-item">
           <span class="icon"><i class="iconfont">&#xe610;</i></span>
           <span class="title">冷饮</span>
-          <span class="sub-title">Espresso</span>
-          <i class="flag">1</i>
         </li>
-        <li class="active">
-          <span class="icon"><i class="iconfont">&#xe606;</i></span>
-          <span class="title">咖啡/茶饮</span>
-          <span class="sub-title">Coffee/Tea</span>
-          <i class="flag">2</i>
-        </li>
-        <li>
-          <span class="icon"><i class="iconfont">&#xe607;</i></span>
-          <span class="title">美食</span>
-          <span class="sub-title">Food</span>
-        </li>
-        <li>
+        <li class="dish-category-item">
           <span class="icon"><i class="iconfont">&#xe610;</i></span>
           <span class="title">冷饮</span>
-          <span class="sub-title">Espresso</span>
+        </li>
+        <li class="dish-category-item">
+          <span class="icon"><i class="iconfont">&#xe610;</i></span>
+          <span class="title">冷饮</span>
           <i class="flag">1</i>
         </li>
-        <li class="active">
-          <span class="icon"><i class="iconfont">&#xe606;</i></span>
-          <span class="title">咖啡/茶饮</span>
-          <span class="sub-title">Coffee/Tea</span>
-          <i class="flag">2</i>
-        </li>
-        <li>
-          <span class="icon"><i class="iconfont">&#xe607;</i></span>
-          <span class="title">美食</span>
-          <span class="sub-title">Food</span>
-        </li>
-        <a href="#/tab/service/dish-confirm">确认订单</a>
       </ul>
   </ion-content>
   <ion-content class="dish-content">
     <ul class="list">
+      <li class="item item-divider">
+        咖啡
+      </li>
       <li class="item item-thumbnail-left">
-        <img src="" alt="">
+        <img src="../../img/default-avatar.jpg" alt="">
+        <h2>碎猪肉片</h2>
+        <p>$18.00</p>
+        <div class="quantity-controller">
+          <span class="btn-increase"><i class="iconfont">&#xe646;</i></span>
+          <input class="quantity" type="text">
+          <span class="btn-reduce"><i class="iconfont">&#xe647;</i></span>
+        </div>
+      </li>
+      <li class="item item-thumbnail-left">
+        <img src="../../img/default-avatar.jpg" alt="">
         <h2>碎猪肉片</h2>
         <p>$18.00</p>
       </li>
       <li class="item item-thumbnail-left">
-        <img src="" alt="">
-        <h2>碎猪肉片</h2>
-        <p>$18.00</p>
-      </li>
-      <li class="item item-thumbnail-left">
-        <img src="" alt="">
+        <img src="../../img/default-avatar.jpg" alt="">
         <h2>碎猪肉片</h2>
         <p>$18.00</p>
       </li>
@@ -116,9 +82,8 @@
       </li>
     </ul>
   </ion-content>
-  <div class="bar bar-footer">
-    <button class="button button-clear">Left</button>
-    <div class="title">Title</div>
-    <button class="button button-clear">Right</button>
+  <div class="bar bar-footer bar-dark dish-footbar">
+    <div class="title"><span class="dish-cart"><i class="iconfont">&#xe612;</i></span>$213.00</div>
+    <button class="button button-assertive">去结算</button>
   </div>
 </ion-view>

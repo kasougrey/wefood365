@@ -39,11 +39,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 /* reset */
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_1444670926_4162803.eot'); /* IE9*/
-  src: url('//at.alicdn.com/t/font_1444670926_4162803.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('//at.alicdn.com/t/font_1444670926_4162803.woff') format('woff'), /* chrome、firefox */
-  url('//at.alicdn.com/t/font_1444670926_4162803.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('//at.alicdn.com/t/font_1444670926_4162803.svg#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/font_1453790474_9515085.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1453790474_9515085.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1453790474_9515085.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1453790474_9515085.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1453790474_9515085.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -58,7 +58,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 .item {
   font-size: 14px;
-  padding: 12px;
+  padding: 16px;
   &.item-icon-left {
     padding-left: 40px;
   }
@@ -82,6 +82,28 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   }
 }
 
+.quantity-controller{
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  @include clearfix;
+  text-align: right;
+  span{
+    display: inline-block;
+    .iconfont{
+      font-size: 24px;
+    }
+  }
+  input[type="text"]{
+    padding:0;
+    text-align: center;
+    width: 30px;
+    height: 24px;
+    font-size: 16px;
+    color: $accent-color;
+    display:inline-block;
+  }
+}
 /* dish */
 .dish {
 }
@@ -89,10 +111,47 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .dish-category {
   @include clearfix;
   width: 30%;
-  background: #F5F5F5;
+  background: #e5e5e5;
   bottom: 44px;
-  li{
-    line-height: 50px;
+
+}
+
+.dish-category-item{
+  background: #FAFAFA;
+  position: relative;
+  padding: 10px;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #DDD;
+  &.active{
+    background: #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+  }
+  .icon{
+    color: #939393;
+    position: absolute;
+    left:5px;
+    top:10px;
+  }
+  .title{
+    display: inline-block;
+    margin-left: 20%;
+    width: 80%;
+    line-height: 1.5;
+    color: #333;
+  }
+  .flag{
+    position: absolute;
+    display: block;
+    right: 5px;
+    top: 5px;
+    width: 16px;
+    height:16px;
+    border-radius: 8px;
+    font-size: 8px;
+    line-height: 16px;
+    text-align: center;
+    background: $accent-color;
+    color: #FFFFFF;
   }
 }
 
@@ -103,6 +162,31 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   &.overflow-scroll{
     left:30%
   }
+}
+
+.dish-footbar{
+  .title+.button:last-child{
+    top:0;
+    right:0;
+    bottom: 0;
+    border-radius: 0;
+    text-align: center;
+    width: 120px;
+    font-size: 18px;
+  }
+  .title{
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    line-height: 34px;
+    .iconfont{
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.dish-cart{
 }
 
 /* account */
